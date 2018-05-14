@@ -4,7 +4,7 @@
  
   <groupId>com.mycompany.app</groupId>
   <artifactId>my-app</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0</version>
   <packaging>jar</packaging>
  
   <name>Maven Quick Start Archetype</name>
@@ -18,4 +18,12 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  <distributionManagement>
+  <repository>
+  <id>maven-releases</id>
+  <url>http://localhost:8081/repository/maven-releases/</url>
+ <!--<username>admin</username>
+   <password>admin123</password>-->
+  </repository>
+   </distributionManagement> 
 </project>
